@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -14,7 +15,8 @@
             <div class="">
                 <p class="font-bold text-lime-400 lg:text-5xl">Portfolio</p>
             </div>
-            <nav class="hidden md:block list-none md:flex md:space-x-7  lg:space-x-10 items-center">
+            <nav id="nav" class="translate-x-[-20rem]  z-50 space-y-5 bg-black h-fit opacity-70	 w-[12rem] text-center py-10 duration-1000 absolute text-3xl
+             md:relative list-none md:flex md:space-x-7 md:translate-x-0 md:h-fit md:self-center md:space-y-0 md:py-0 md:w-fit md:text-xl lg:space-x-10 items-center">
                 <li class="font-bold lg:text-2xl"><a href="">Home</a></li>
                 <li class="font-bold lg:text-2xl"><a href="">About Me</a></li>
                 <li class="font-bold lg:text-2xl"><a href="">Education</a></li>
@@ -25,7 +27,7 @@
                 <div class="self-center ">
                     <p class="font-semibold text-xl">Resume</p>
                 </div>
-                <div class="space-y-1 my-auto md:hidden">
+                <div id="menu" class="space-y-1 my-auto md:hidden">
                     <div class="h-1 w-7 bg-white"></div>
                     <div class="h-1 w-7 bg-white"></div>
                     <div class="h-1 w-7 bg-white"></div>
@@ -35,21 +37,25 @@
 
         <!-- Home -->
         <section class="flex md:h-[33rem] ">
-            <div class=" flex flex-col md:justify-center py-auto pl-10 md:w-[65%] w-[55%] bg-slate-900 lg:pl-[8rem] lg:space-y-2 text-white">
+            <div class=" flex flex-col md:py-0 py-[4rem] md:justify-center py-auto pl-10 md:w-[65%] w-[55%] bg-slate-900 lg:pl-[8rem] lg:space-y-2 text-white">
                 <p class=" z-10">Hello</p>
                 <h1 class="font-bold z-10 text-orange-500 text-4xl md:text-5xl">I'm Himanshu</h1>
                 <p class="relative text-lime-400">Frontend-Developer <br> Web-Designer</p>
             </div>
-            <div class="bg-lime-500 w-[45%] md:w-[35%]">
-                <img class="bg-orange-500 rounded-full lg:h-[22rem] -ml-[3rem] mt-[10rem] md:-ml-[6rem] lg:-ml-[7rem] sm:mt-[7rem] md:mt-[8rem] border-black border-2" src="image/Myimage--1-1-edit__1_-removebg-preview.png" alt="">
+            <div class="bg-lime-500 w-[45%] md:py-0 py-[4rem] md:w-[35%]">
+                <img class="bg-orange-500 rounded-full lg:h-[22rem] -ml-[3rem] mt-[10rem] md:-ml-[6rem] lg:-ml-[7rem] sm:mt-[0rem] md:mt-[6rem] border-black border-2" src="image/Myimage--1-1-edit__1_-removebg-preview.png" alt="">
             </div>
         </section>
 
-        <section>
-            <div class=""></div>
+        <section class="">
+                <h1 style="background-image: url(./image/Untitled\ design.jpg);" class="text-7xl text-center font-extrabold bg-clip-text text-transparent bg-contain bg-center">About Me</h1>
+            <div class="">
+
+            </div>
         </section>
     </package>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
