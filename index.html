@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -17,11 +17,11 @@
             </div>
             <nav id="nav" class="translate-x-[-20rem]  z-50 space-y-5 bg-black h-fit opacity-70	 w-[12rem] text-center py-10 duration-1000 absolute text-3xl
              md:relative list-none md:flex md:space-x-7 md:translate-x-0 md:h-fit md:self-center md:space-y-0 md:py-0 md:w-fit md:text-xl lg:space-x-10 items-center">
-                <li class="font-bold lg:text-2xl"><a href="">Home</a></li>
-                <li class="font-bold lg:text-2xl"><a href="">About Me</a></li>
+                <li  class="font-bold lg:text-2xl"><a href="#home">Home</a></li>
+                <li  class="font-bold lg:text-2xl"><a href="#about">About Me</a></li>
                 <li class="font-bold lg:text-2xl"><a href="">Education</a></li>
-                <li class="font-bold lg:text-2xl"><a href="">Projects</a></li>
-                <li class="font-bold lg:text-2xl"><a href="">Contact</a></li>
+                <li  class="font-bold lg:text-2xl"><a href="">Projects</a></li>
+                <li  class="font-bold lg:text-2xl"><a href="">Contact</a></li>
             </nav>
             <div class="flex space-x-6">
                 <div class="self-center ">
@@ -32,11 +32,15 @@
                     <div class="h-1 w-7 bg-white"></div>
                     <div class="h-1 w-7 bg-white"></div>
                 </div>
+                <div class="self-center">
+                    <div class="h-1 w-7 bg-white rotate-45 -translate-x-6 translate-y-8 "></div>
+                    <div class="h-1 w-7 bg-white -rotate-45 -translate-x-8 -translate-y-9"></div>
+                </div>
             </div>
         </section>
 
         <!-- Home -->
-        <section class="flex md:h-[33rem] ">
+        <section id="home" class="flex md:h-[33rem] ">
             <div class=" flex flex-col md:py-0 py-[4rem] md:justify-center py-auto pl-10 md:w-[65%] w-[55%] bg-slate-900 lg:pl-[8rem] lg:space-y-2 text-white">
                 <p class=" z-10">Hello</p>
                 <h1 class="font-bold z-10 text-orange-500 text-4xl md:text-5xl">I'm Himanshu</h1>
@@ -47,10 +51,11 @@
             </div>
         </section>
 
-        <section class="">
-                <h1 style="background-image: url(./image/Untitled\ design.jpg);" class="text-7xl text-center font-extrabold bg-clip-text text-transparent bg-contain bg-center">About Me</h1>
+        <section id="about" class="my-4">
+                <h1 style="background-image: url(./image/Untitled\ design.jpg);"
+                 class="text-7xl text-center font-extrabold bg-clip-text text-transparent bg-contain bg-center">About Me</h1>
             <div class="">
-
+                               
             </div>
         </section>
     </package>
