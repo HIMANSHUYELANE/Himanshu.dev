@@ -13,3 +13,11 @@ cancel.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   cancel.classList.toggle("hidden");
 });
+
+let cont=document.getElementById('cont')
+let img=document.getElementById('img')
+
+// document.addEventListener('DOMContentLoaded',()=>{
+//   cont.classList.add('translate-x-0')
+//   img.classList.add('translate-x-0')
+// })

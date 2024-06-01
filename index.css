@@ -1,2 +1,17 @@
-    
+@keyframes travel {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 
+#cont{
+    animation: travel 1s;
+    animation-iteration-count: 1;
+}
+#img{
+    animation: travel 1s;
+    animation-iteration-count: 1;
+}
