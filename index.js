@@ -21,3 +21,27 @@ let img=document.getElementById('img')
 //   cont.classList.add('translate-x-0')
 //   img.classList.add('translate-x-0')
 // })
+
+
+let btn=document.getElementById('btn')
+btn.addEventListener('click',(e)=>{
+  let name=document.getElementById('name')
+  let mail=document.getElementById('mail')
+  let message=document.getElementById('message')
+  let m1=document.getElementById('m1')
+  let m2=document.getElementById('m2')
+  let m3=document.getElementById('m3')
+  
+  if(name.value.trim()===''){
+    m1.classList.toggle('hidden')
+    e.preventDefault()
+  }
+ if(mail.value.trim() === ''){
+  m2.classList.toggle('hidden')
+  e.preventDefault()
+  }
+  if(message.value.trim()===''){
+    m3.classList.toggle('hidden')
+    e.preventDefault()
+  }
+})
