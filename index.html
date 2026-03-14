@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
   <body>
     <package>
       <section
+        id="nav"
         class="flex bg-black text-white py-5 justify-between md:justify-between px-8"
       >
         <div class="">
@@ -20,10 +21,18 @@
           id="nav"
           class="translate-x-[-20rem] z-50 space-y-5 bg-black h-fit opacity-70 w-[12rem] text-center py-10 duration-1000 absolute text-3xl md:relative list-none md:flex md:space-x-7 md:translate-x-0 md:h-fit md:self-center md:space-y-0 md:py-0 md:w-fit md:text-xl lg:space-x-10 items-center"
         >
-          <li class="font-bold lg:text-2xl"><a href="#home">Home</a></li>
-          <li class="font-bold lg:text-2xl"><a href="#about">About Me</a></li>
-          <li class="font-bold lg:text-2xl"><a href="#project">Projects</a></li>
-          <li class="font-bold lg:text-2xl"><a href="#contact">Contact</a></li>
+          <li class="font-bold lg:text-2xl hover:border-b-4 border-lime-500">
+            <a href="#home">Home</a>
+          </li>
+          <li class="font-bold lg:text-2xl hover:border-b-4 border-lime-500">
+            <a href="#about">About Me</a>
+          </li>
+          <li class="font-bold lg:text-2xl hover:border-b-4 border-lime-500">
+            <a href="#project">Projects</a>
+          </li>
+          <li class="font-bold lg:text-2xl hover:border-b-4 border-lime-500">
+            <a href="#contact">Contact</a>
+          </li>
         </nav>
         <div class="flex space-x-6">
           <div class="self-center">
@@ -48,29 +57,73 @@
         <div
           class="flex flex-col md:py-[3rem] py-[4rem] md:justify-center pl-10 md:w-[65%] w-[55%] bg-slate-900 lg:pl-[8rem] lg:space-y-2 text-white"
         >
+          <img
+            id="imge1"
+            class="h-10 absolute top-[75%] right-[10%] w-10"
+            src="./image/html.4de5d2224c60b7fbde73.png"
+            alt=""
+          />
+          <img
+            id="imge2"
+            class="h-16 absolute top-[40%] right-[5%] w-15"
+            src="./image/png-transparent-github-social-me-removebg-preview.png"
+            alt=""
+          />
+          <img
+            id="imge3"
+            class="h-10 absolute top-1/4 right-[20%] w-10"
+            src="./image/css.8ea58d31a9d39dd59031.png"
+            alt=""
+          />
+          <img
+            id="imge4"
+            class="h-10 absolute top-1/4 w-10 right-[80%]"
+            src="./image/Untitled.png"
+            alt=""
+          />
+          <img
+            id="imge5"
+            class="h-10 absolute top-[80%] w-10 right-2/3"
+            src="./image/tailwindcss.8e81e4c5944b034a5865.png"
+            alt=""
+          />
+          <img
+            id="imge6"
+            class="h-10 absolute top-[40%] w-10 right-2/4"
+            src="./image/react1.fc0396332c9ab25d028a.png"
+            alt=""
+          />
           <div id="cont" class="">
             <p class="z-10">Hello <span class="text-4xl">👋</span></p>
             <h1 class="font-bold z-10 text-orange-500 text-4xl md:text-5xl">
               I'm Himanshu
             </h1>
-            <p class="relative text-lime-400">
-              Frontend React Developer | Web-Designer
-            </p>
+            <div class="relative w-72 h-10 overflow-hidden bg-slate-900">
+              <p
+                id="skill"
+                class="absolute text-lime-500 font-bold text-3xl whitespace-nowrap animate-scroll"
+              >
+                Full Stack Developer | Frontend React Developer | Web-Designer
+              </p>
+            </div>
             <p class="text-gray-400 md:text-md lg:text-xl font-semibold">
-              I Built the interactive Websites & Web-Applications
+              I Built the interactive Websites & Web-Applications <br />
+              with Animation
             </p>
             <div class="flex my-4 gap-2">
               <div class="bg-slate-400 rounded-full">
-               <a href="https://github.com/HIMANSHUYELANE">
-                 <img
-                 class="h-[4rem]"
-                 src="./image/png-transparent-github-social-me-removebg-preview.png"
-                 alt=""
-                 />
+                <a href="https://github.com/HIMANSHUYELANE">
+                  <img
+                    class="h-[4rem]"
+                    src="./image/png-transparent-github-social-me-removebg-preview.png"
+                    alt=""
+                  />
                 </a>
               </div>
               <div class="bg-slate-400 rounded-full">
-                <a href="https://www.linkedin.com/in/himanshu-yelane-aa25542a8/">
+                <a
+                  href="https://www.linkedin.com/in/himanshu-yelane-aa25542a8/"
+                >
                   <img class="h-[4rem]" src="./image/linkedin.png" alt="" />
                 </a>
               </div>
@@ -81,7 +134,7 @@
           <div id="img" class="">
             <img
               class="bg-orange-500 rounded-full lg:h-[22rem] -ml-[1rem] mt-[10rem] md:-ml-[6rem] lg:-ml-[7rem] sm:mt-[0rem] md:mt-[9rem] border-black border-2"
-              src="image/Myimage--1-1-edit__1_-removebg-preview.png"
+              src="image\Myimage--1-1-edit__1_-removebg-preview.png"
               alt=""
             />
           </div>
@@ -110,26 +163,45 @@
             />
           </div>
           <div
-            class="my-auto py-3 sm:w-[50%] w-[85%] mx-auto md:text-left text-black text-xl font-bold"
+            class="my-auto sm:w-[50%] w-[85%] mx-auto md:text-left text-black text-xl font-bold"
           >
+            <h1 class="text-4xl italic text-center my-5">
+              I Build Meaningful
+              Digital Experience
+            </h1>
             <ul type="disc" class="space-y-5">
               <li>
-                Hello! I'm <span class="text-orange-600 text-2xl italic">Himanshu Yelane</span>,
-                A creative frontend developer I build interactive Web
+                Hello! I'm
+                <span class="text-orange-600 text-2xl italic"
+                  >Himanshu Yelane</span
+                >, A creative frontend developer I build interactive Web
                 Applications
               </li>
               <li>
                 I recently graduated with a degree in
-                <span class="text-lime-600"> BCA </span> from
-                <span class="text-lime-600">RTMNU</span>
+                <span class="font-extrabold"> BCA </span> from
+                <span class="font-extrabold">RTMNU</span>
               </li>
               <li>
                 As a Frontend developer, I specialize in using latest
                 technologies including
-                <span class="text-white"
-                  > <i class="bg-orange-500 text-white px-3">HTML</i> <i class="bg-blue-500 px-3 ">CSS</i> <i class="bg-yellow-500 px-3 ">JAVASCRIPT</i> <i class="bg-cyan-600 px-3 ">REACT</i> <i class="bg-indigo-500 px-3 ">TAILWIND-CSS</i> <i class="bg-amber-500 px-3 ">FIREBASE</i> </span
-                >and tools like
-                <span class="text-white"> <i class="bg-blue-700 px-3 ">VSCODE</i> <i class="bg-orange-700 px-3 ">GIT</i> <i class="bg-slate-700 px-3 ">GITHUB</i> </span>.
+                <span class="text-white">
+                  <i class="bg-orange-500 text-white px-3">HTML</i>
+                  <i class="bg-blue-500 px-3">CSS</i>
+                  <i class="bg-yellow-500 px-3">JAVASCRIPT</i>
+                  <i class="bg-cyan-600 px-3">REACT</i>
+                  <i class="bg-indigo-500 px-3">TAILWIND-CSS</i>
+                  <i class="bg-amber-500 px-3">FIREBASE</i>
+                </span>
+                <i class="bg-lime-500 text-white px-3">Node.js</i>
+                <i class="bg-green-700 text-white px-3">Express.js</i>
+                <i class="bg-green-500 text-white px-3">MongoDB</i> >and tools
+                like <i class="bg-orange-500 text-white px-3">Postman-API</i>
+                <span class="text-white">
+                  <i class="bg-blue-700 px-3">VSCODE</i>
+                  <i class="bg-orange-700 px-3">GIT</i>
+                  <i class="bg-slate-700 px-3">GITHUB</i> </span
+                >.
               </li>
               <li>
                 I'm excited to start my professional journey and contribute to
@@ -174,7 +246,7 @@
           <div
             class="w-[100px] animate-bounce h-[100px] bg-slate-800 rounded-full"
           >
-            <img 
+            <img
               class="m-auto mt-2 h-[5rem]"
               src="./image/tailwindcss.8e81e4c5944b034a5865.png"
               alt="tailwind"
@@ -220,15 +292,19 @@
       </section>
 
       <!-- Projects -->
-      <section id="project" class="bg-slate-800 -translate-y-16 -skew-y-2">
+      <section
+        id="project"
+        class="bg-gradient-to-b from-slate-900 to-slate-600 -translate-y-16 -skew-y-2"
+      >
         <h1 class="text-white text-5xl font-bold skew-y-2 text-center py-10">
           PROJECTS
         </h1>
+
         <div
           class="flex flex-wrap gap-10 mx-auto skew-y-2 py-10 pb-[7rem] justify-evenly"
         >
           <div
-            class=" anim shadow-lg shadow-gray-500 skew-y-0 bg-slate-700 w-[20rem] h-[14rem] sm:w-[35rem] sm:h-[20.5rem]"
+            class="anim shadow-lg hover:scale-105 hover:shadow-xl duration-500 shadow-gray-500 hover:shadow-lime-500 skew-y-0 bg-slate-700 w-[20rem] h-[14rem] sm:w-[35rem] sm:h-[20.5rem]"
           >
             <h1
               class="text-center text-white underline underline-offset-2 mt-1"
@@ -264,7 +340,7 @@
             </div>
           </div>
           <div
-            class="anim shadow-lg shadow-gray-500 skew-y-0 bg-slate-700 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
+            class="anim shadow-lg hover:scale-105 hover:shadow-xl duration-500 shadow-gray-500 hover:shadow-lime-500 skew-y-0 bg-slate-700 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
           >
             <h1
               class="text-center text-white underline underline-offset-2 mt-1"
@@ -294,7 +370,7 @@
             </div>
           </div>
           <div
-            class="anim shadow-lg shadow-gray-500 skew-y-0 bg-slate-700 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
+            class="anim shadow-lg hover:scale-105 hover:shadow-xl duration-500 shadow-gray-500 hover:shadow-lime-500 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
           >
             <h1
               class="text-center text-white underline underline-offset-2 mt-1"
@@ -326,7 +402,7 @@
             </div>
           </div>
           <div
-            class="anim shadow-lg shadow-gray-500 skew-y-0 bg-slate-700 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
+            class="anim shadow-lg hover:scale-105 hover:shadow-xl duration-500 shadow-gray-500 hover:shadow-lime-500 sm:w-[35rem] sm:h-[20.5rem] w-[20rem] h-[15rem]"
           >
             <h1
               class="text-center text-white underline underline-offset-2 mt-1"
@@ -360,7 +436,7 @@
 
       <!-- Contact Me -->
       <section
-        class="bg-gradient-to-b from-slate-800 flex flex-col -mt-[5.5rem] -skew-y-2 to-black pb-[5rem]"
+        class="bg-gradient-to-b from-slate-600 flex flex-col -mt-[5.5rem] -skew-y-2 to-black pb-[5rem]"
       >
         <h1
           id="contact"
@@ -368,73 +444,128 @@
         >
           CONTACT ME
         </h1>
-        <form class="flex flex-col items-center" action="https://api.web3forms.com/submit" method="POST">
-        <div
-          class="rounded-lg skew-y-2 flex flex-col space-y-2 mx-auto w-[80%] text-white py-5"
+        <form
+          class="flex flex-col items-center"
+          action="https://api.web3forms.com/submit"
+          method="POST"
         >
-        <input type="hidden" name="access_key" value="47214e86-4f8f-4df8-839e-ce91f9bc5f2a">
+          <div
+            class="rounded-lg skew-y-2 flex flex-col space-y-2 mx-auto w-[80%] text-white py-5"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="47214e86-4f8f-4df8-839e-ce91f9bc5f2a"
+            />
 
-          <label for="">Name</label>
-          <input id="name"
-          name='name'
-            class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
-            type="text" required
-          />
-          <p id="m1" class="text-red-600 text-sm hidden font-light">Please Enter the Name</p>
-          <label for="">E-Mail</label>
-          <input id="mail"
-          name="e_mail"
-            class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
-            type="text" required
-          />
-          <p id="m2" class="text-red-600 text-sm hidden font-light">Please Enter the Email</p>
-          <label for="">message</label>
-          <textarea id="message"
-          name="massage"
-            class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
-            name=""
-            id=""
-            cols="50"
-            rows="10"
-            required
-          ></textarea>
-          <p id="m3" class="text-red-600 text-sm hidden font-light">Please Type the Message</p>
-        </div>
-        <button id="btn" type="submit"
-          class="hover:bg-orange-500 skew-y-2 rounded-md text-2xl text-white my-4 font-bold px-4 w-fit border-2 border-lime-500 text-md hover:scale-110 duration-500 hover:border-0"
-        >
-          Contact Me
-        </button>
-      </form>
+            <label for="">Name</label>
+            <input
+              id="name"
+              name="name"
+              class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
+              type="text"
+              required
+            />
+            <p id="m1" class="text-red-600 text-sm hidden font-light">
+              Please Enter the Name
+            </p>
+            <label for="">E-Mail</label>
+            <input
+              id="mail"
+              name="e_mail"
+              class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
+              type="text"
+              required
+            />
+            <p id="m2" class="text-red-600 text-sm hidden font-light">
+              Please Enter the Email
+            </p>
+            <label for="">message</label>
+            <textarea
+              id="message"
+              name="massage"
+              class="bg-transparent border-2 rounded-md border-gray-500 py-1 px-2"
+              name=""
+              id=""
+              cols="50"
+              rows="10"
+              required
+            ></textarea>
+            <p id="m3" class="text-red-600 text-sm hidden font-light">
+              Please Type the Message
+            </p>
+          </div>
+          <button
+            id="btn"
+            type="submit"
+            class="hover:bg-orange-500 skew-y-2 rounded-md text-2xl text-white my-4 font-bold px-4 w-fit border-2 border-lime-500 text-md hover:scale-110 duration-500 hover:border-0"
+          >
+            Contact Me
+          </button>
+        </form>
       </section>
 
       <!-- Foooter -->
       <section class="-translate-y-10">
-        <div class=" text-white bg-gradient-to-b from-black to-slate-800 py-10 flex flex-wrap justify-around ">
-          <div class=" space-y-4">
+        <div
+          class="text-white bg-gradient-to-b from-black to-slate-500 py-10 flex flex-wrap justify-around"
+        >
+          <h1 class="text-4xl self-center font-bold text-white">
+            Get in Touch With
+          </h1>
+          <div class="space-y-4">
             <h1 class="text-xl font-bold">My Profiles</h1>
-            
-              <a class="flex items-center gap-4" href="https://www.linkedin.com/in/himanshu-yelane-aa25542a8/"><img class="h-[3rem] bg-white rounded-full" src="./image/linkedin.png" alt="" />
-              <p class="bg-lime-500 py-1 font-semibold  px-3">Linked In</p></a>
-          
-            
-              <a class="flex items-center gap-4" href="https://github.com/HIMANSHUYELANE"><img class="h-[3rem] bg-white rounded-full" src="./image/25231.png" alt="" />
-              <p class="bg-orange-500 py-1  font-semibold px-4">Git Hub</p></a>
-          
-            
-              <a class="flex items-center gap-4" href=""><img class="h-[3rem] bg-white rounded-full" src="./image/twitter (1).png" alt="" />
-              <p class="bg-indigo-500 py-1  font-semibold px-5">Twitter</p></a>
-            
-            
-              <a class="flex items-center gap-4" href="https://www.instagram.com/_himanshu__yelane_/"><img class="h-[3rem] bg-white rounded-full" src="./image/instagram (1).png" alt="" />
-              <p class="bg-cyan-500 py-1  font-semibold px-2">Instagram</p></a>
-          
+
+            <a
+              class="flex items-center gap-4"
+              href="https://www.linkedin.com/in/himanshu-yelane-aa25542a8/"
+              ><img
+                class="h-[3rem] bg-white rounded-full"
+                src="./image/linkedin.png"
+                alt=""
+              />
+              <p class="bg-lime-500 py-1 font-semibold px-3">Linked In</p></a
+            >
+
+            <a
+              class="flex items-center gap-4"
+              href="https://github.com/HIMANSHUYELANE"
+              ><img
+                class="h-[3rem] bg-white rounded-full"
+                src="./image/25231.png"
+                alt=""
+              />
+              <p class="bg-orange-500 py-1 font-semibold px-4">Git Hub</p></a
+            >
+
+            <a class="flex items-center gap-4" href=""
+              ><img
+                class="h-[3rem] bg-white rounded-full"
+                src="./image/twitter (1).png"
+                alt=""
+              />
+              <p class="bg-indigo-500 py-1 font-semibold px-5">Twitter</p></a
+            >
+
+            <a
+              class="flex items-center gap-4"
+              href="https://www.instagram.com/_himanshu__yelane_/"
+              ><img
+                class="h-[3rem] bg-white rounded-full"
+                src="./image/instagram (1).png"
+                alt=""
+              />
+              <p class="bg-cyan-500 py-1 font-semibold px-2">Instagram</p></a
+            >
           </div>
           <div class="font-bold space-y-4 text-xl">
             <h1>Another Contact</h1>
             <p>+91 8378915506</p>
             <p>himanshuyelane@gmail.com</p>
           </div>
+          <button class="h-10 w-12 self-end">
+            <a href="#nav"><img src="./image/up-arrow.png" alt="" /></a>
+          </button>
         </div>
       </section>
       <div class="h-[4rem] bg-slate-800 -mt-28"></div>

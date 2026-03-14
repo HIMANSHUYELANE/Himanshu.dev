@@ -6,6 +6,24 @@
         transform: translateX(0%);
     }
 }
+@keyframes texttra {
+    0% {
+        transform: translateX(34%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes blink {
+    from {
+        opacity: 0%;
+        /* scale: 00%; */
+    }
+    to {
+        opacity: 100%;
+        /* scale: 100%; */
+    }
+}
 @keyframes scroll {
     from {
         opacity: 0;
@@ -13,8 +31,33 @@
     }
     to {
         scale: 100% ;
-        opacity: 1;
+        opacity: 100;
     }
+}
+
+#imge1{
+    animation: blink 300ms ease infinite;
+}
+#imge2{
+    animation: blink 400ms ease-in infinite;
+}
+#imge3{
+    animation: blink 500ms ease-out infinite;
+}
+#imge4{
+    animation: blink 350ms ease-in-out infinite;
+}
+#imge5{
+    animation: blink 400ms linear infinite;
+}
+#imge6{
+    animation: blink 475ms ease infinite;
+}
+
+
+
+#skill{
+    animation: texttra 12s linear infinite
 }
 
 #cont{
@@ -26,7 +69,7 @@
     animation-iteration-count: 1;
 }
 .anim{
-    animation: scroll linear;
+    animation: scroll linearR;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
 }

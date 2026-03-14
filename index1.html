@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Typing Animation</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center  ;
+      align-items: center;
+      background: #0f172a;
+      color: #38bdf8;
+      font-family: "Courier New", monospace;
+    }
+
+    .typing {
+      font-size: 2rem;
+      border-right: 3px solid #38bdf8;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% {
+        border-color: transparent;
+      }
+      25%, 75% {
+        border-color: #38bdf8;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="typing" id="text"></div>
+
+  <script>
+    const text = "But Projects nahi ban rahe?";
+    let index = 0;
+    const speed = 100; // typing speed in ms
+    const element = document.getElementById("text");
+
+    function typeText() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, speed);
+      }
+    }
+
+    window.onload = typeText;
+  </script>
+
+</body>
+</html>
